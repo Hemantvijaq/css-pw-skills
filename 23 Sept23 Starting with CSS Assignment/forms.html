@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            margin: 10px;
+            padding: 5px;
+        }
+        .firstname{
+            background-color: rgb(221, 33, 33);
+        }
+        .lastname{
+            background-color: rgb(146, 122, 117);
+        }
+        .passward{
+            background-color: rgb(0, 13, 255);
+        }
+        .email{
+            background-color: rgb(16, 193, 16);
+        }
+        button{
+            background-color: slategrey;
+            opacity: 65%;
+        }
+        #terms:checked{
+            accent-color:rgb(71, 117, 135);
+        }
+    </style>
+</head>
+<body>
+     <h2>Register Here</h2>
+     <form>
+        <label for="firstname">FirstName 
+            <input type="text" placeholder="FirstName" name="firstname" id="firstname" class="firstname"  min="3" max="20" required>
+        </label><br>
+        <label for="lastname">LastName 
+            <input type="text" placeholder="lastname" name="lastname" id="lastname" class="lastname"  min="3" max="20" required>
+        </label><br>
+        <label for="email">Email 
+            <input type="email" placeholder="@gmail.com" name="email" id="email" class="email" required>
+        </label><br>
+        <label for="password">Password 
+            <input type="password" placeholder="********" name="password" id="password" class="password"  min="8" required>
+        </label><br>
+        <label for="confirmpassword">ComfirmPassward 
+            <input type="password" placeholder="********" name="confirmpassword" id="comfirmpassword" class="password"  min="8" required>
+        </label><br>
+        <label for="age">Age
+            <input type="number" name="age" id="age" class="age"  min="5" max="110" required>
+        </label><br>
+        <label for="gender">Gender 
+            <input type="radio" placeholder="18" name="gender" id="male" class="gender">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" class="gender">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" class="gender">
+            <label for="other">Other</label>
+        </label><br>
+         <label for="terms"> 
+            <input type="checkbox" name="terms" id="terms" class="terms" required>
+           I Accept All Terms & Condition.
+         </label><br>
+         <button type="submit">Register</button>
+     </form>
+</body>
+</html>
