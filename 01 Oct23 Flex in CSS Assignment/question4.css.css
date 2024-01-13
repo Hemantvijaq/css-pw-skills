@@ -1,0 +1,86 @@
+body,p,h1,h2,h3{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+ 
+/* pricising section */
+.subscribe_cards{
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    background-color: #F4F2FD;
+
+}
+
+.subscribe-now-btn-container:hover{
+    padding: 5px;
+    color: rgb(29, 29, 87);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/* cards */
+.cards
+{
+    width: 250px;
+    border: 2px solid black;
+    height: fit-content;
+    background-color: white;
+    border-radius: 7px;
+    padding-top: 40px;
+    padding-left: 30px;
+    
+}
+.cards:hover{
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+}
+.plan_name{
+    font-size: 36px;
+}
+.pricising{
+    font-weight: 100;
+    margin: 12px 0;
+    font-size: 36px;
+}
+ .features{
+    display: flex;
+    justify-content: flex-start;
+ }
+ 
+ .subscribe-now-btn{
+    margin: 18px auto;
+    padding: 15px 30px;
+    background-color: navy;
+    color: white;
+    border-radius: 24px;
+    font-size: 20px;
+    border-color: transparent;
+
+ }
+ .subscribe-now-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+ }
+
+ /* dark cards */
+
+ .dark{
+    background-color: navy;
+    color: whitesmoke;
+ }
+
+ .subscribe-now-btn-container .dark{
+    background-color: white;
+    color: navy;
+ }
