@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media image gallery</title>
+    <style>
+    .image_gallery{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .image_gallery img{
+        margin: 10px;
+        width: 30%;
+    }
+    @media screen and (max-width:800px) {
+        .image_gallery img{
+          width: 45% ;
+          border-radius: 10px;
+        }
+        
+    }
+    @media screen and (max-width:500px) {
+        .image_gallery img{
+          width: 100% ;
+        }
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="image_gallery">
+        <img src="https://fastly.picsum.photos/id/858/200/300.jpg?hmac=DTAlvvjtwmfGDoOk7DeD1M6RbbwgALztKa3o8V8TF7s" alt="">
+        <img src="https://fastly.picsum.photos/id/877/200/300.jpg?hmac=kxnqPHdYgfVGqD41ArUXpM0IuUCD2GYefTwBboMDVeA" alt="">
+        <img src="https://fastly.picsum.photos/id/806/200/300.jpg?hmac=IA-MNmLr1ua-cWJTayRkIMVB9ZU-DrSrJUB_8gi-Xpw" alt="">
+
+    </div>
+</body>
+</html> 

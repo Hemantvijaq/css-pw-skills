@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            background-color: #a38e5e;
+        }
+         .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+
+     @media screen  and (max-width: 768px) {
+        .navbar{
+            flex-direction: column;
+            align-items: center;
+            background-color: grey;
+        }
+        
+     }
+    </style>
+</head>
+<body>
+    <header>
+       
+        <nav class="navbar">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">service</a>
+            <a href="#">portfolio</a>
+            <a href="#">contact</a>
+
+        </nav>
+   
+    </header>
+</body>
+</html>

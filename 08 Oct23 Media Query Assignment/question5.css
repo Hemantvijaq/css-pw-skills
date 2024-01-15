@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+} 
+.container{
+ display: flex; 
+ flex-direction: column;
+ background-color: brown;  
+ min-height: 100vh; 
+}   
+
+.header,
+.footer
+{
+    background-color: rgb(31, 152, 112);
+    padding: 20px;
+    color: white;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.sidebar,
+.content{
+    background-color: blueviolet;
+    padding: 20px;
+}
+.sidebar{
+    background-color: cadetblue;
+}
+@media screen and (min-width: 768px) {
+   .container{
+    flex-direction:row;
+   }
+   .sidebar,
+   .content{
+    flex: 2;
+   }
+    
+}
