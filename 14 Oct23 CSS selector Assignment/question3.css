@@ -1,0 +1,6 @@
+h1::after{
+    content: "after content";
+}
+h2::before{
+    content: "before content";
+}

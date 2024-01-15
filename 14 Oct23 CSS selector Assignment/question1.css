@@ -1,0 +1,42 @@
+/* combinator selector targetting anchor tag */
+nav a{
+    color: rgb(243, 53, 10);
+}
+/* targetting first h2 tag */
+nav > h2{
+    color: rgb(201, 22, 9);
+    background-color: aquamarine;
+}
+/* targetting first paragraph tag */
+ul + p{
+    color: rgb(255, 55, 0);
+}
+
+a[href]{
+    color: rgb(213, 48, 23);
+    text-decoration: none;
+}
+
+/* targetting the anchor tagwith the attribute of class name active */
+a[class="active"]{
+    color: rgb(32, 155, 221);
+}
+
+/* targetting the anchor tag with target blank */
+a[target="_self"]{
+    background-color: grey;
+}
+
+/* target the last p tag */
+p:last-child::after{
+    content: "...";
+}
+/* targetting the bullet points to rempve */
+li::marker{
+    color: green;
+}
+/* targetting second p tag */
+p:nth-child(even)::first-letter{
+    color: red;
+    font-size: 30px
+}
